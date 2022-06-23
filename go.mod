@@ -12,6 +12,7 @@ require (
 	github.com/spf13/cobra v1.1.1
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.6.1
+	golang.org/x/sys v0.0.0-20220622161953-175b2fd9d664 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
 	gotest.tools v2.2.0+incompatible
 	k8s.io/api v0.20.4
@@ -24,3 +25,5 @@ require (
 	sigs.k8s.io/kustomize/cmd/config v0.9.10
 	sigs.k8s.io/kustomize/kyaml v0.10.17
 )
+
+replace sigs.k8s.io/kustomize/kyaml => github.com/yhrn/kustomize/kyaml v0.10.17-patch4
